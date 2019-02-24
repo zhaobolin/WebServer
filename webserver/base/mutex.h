@@ -13,6 +13,7 @@ class MutexLock:zbase::noncopyable
 
 				~MutexLock()
 				{
+						//pthread_mutex_lock(&mutex);
 						assert(holder_==0);
 						pthread_mutex_destroy(&mutex_);
 				}
@@ -22,10 +23,10 @@ class MutexLock:zbase::noncopyable
 						return(holder_==CurrentThread::tid());
 				}
 
-				void Lock()
+				void lock()
 				{
 						pthread_mutex_lock(&mutex_);
-						holder_=CurrentThread:;tid();
+						holder_=CurrentThread::tid();
 				}
 
 				void unlock()
@@ -42,5 +43,37 @@ class MutexLock:zbase::noncopyable
 		private:
 				pthread_mutex_t mutex_;
 				pid_t holder_;
-}
+		private:
+				//友元类不受访问权限影响
+				friend class condition;
+};
+
+class MutexLockGuard:zbase::noncopyable
+{
+		public:
+				explicit MutexLockGuard(MutexLock &mutex)
+						:mutex_(mutex)
+				{
+						mutex_.lock();
+				}
+				~MutexLockGuard()
+				{
+						mutex_.unLock();
+				}
+		private:
+				MutexLock& mutex_;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
 
