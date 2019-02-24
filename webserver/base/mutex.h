@@ -1,4 +1,6 @@
+#pragma once
 #include <pthread.h>
+#include "noncopyable.h"
 
 class MutexLock:zbase::noncopyable
 {
