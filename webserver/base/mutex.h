@@ -1,14 +1,16 @@
 #pragma once
 #include <pthread.h>
+#include <assert.h>
 #include "noncopyable.h"
-
-class MutexLock:zbase::noncopyable
+#include "currentthread.h"
+//#include "condition.h"
+class MutexLock:noncopyable
 {
 		public:
 				MutexLock()
 						:holder_(0)
 				{
-						pthread_mutex_init(&_mutrex_,NULL);
+						pthread_mutex_init(&mutex_,NULL);
 				}
 
 				~MutexLock()
@@ -20,19 +22,19 @@ class MutexLock:zbase::noncopyable
 
 				bool isLockedByThisThread()
 				{
-						return(holder_==CurrentThread::tid());
+						return(holder_==currentthread::tid());
 				}
 
 				void lock()
 				{
 						pthread_mutex_lock(&mutex_);
-						holder_=CurrentThread::tid();
+						holder_=currentthread::tid();
 				}
 
-				void unlock()
+				void unLock()
 				{
 						holder_=0;
-						pthread_mutex_unlock($mutex);
+						pthread_mutex_unlock(&mutex_);
 				}
 
 				pthread_mutex_t* getPthreadMutex()
@@ -45,10 +47,10 @@ class MutexLock:zbase::noncopyable
 				pid_t holder_;
 		private:
 				//友元类不受访问权限影响
-				friend class condition;
+				friend class Condition;
 };
 
-class MutexLockGuard:zbase::noncopyable
+class MutexLockGuard:noncopyable
 {
 		public:
 				explicit MutexLockGuard(MutexLock &mutex)

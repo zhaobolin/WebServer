@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/testThread.dir/main.cc.o CMakeFiles/testThread.dir/thread.cc.o  -o bin/testThread -lpthread -lrt 
