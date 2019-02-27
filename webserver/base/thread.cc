@@ -108,7 +108,7 @@ void Thread::start()
     }
     else
     {
-        latch_.wait();
+        latch_.wait();//等待struct ThreadData的函数被调用,即开始执行内层真正的功能函数
         assert(tid_>0);
     }
 }

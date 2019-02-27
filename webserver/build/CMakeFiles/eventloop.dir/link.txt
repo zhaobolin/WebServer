@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/eventloop.dir/main.cc.o  -o ../eventloop -lpthread -lrt base/libserver_base.a -lpthread -lrt 

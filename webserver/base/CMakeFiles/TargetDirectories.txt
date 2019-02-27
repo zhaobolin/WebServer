@@ -1,3 +1,0 @@
-/home/zbl/WebServer/webserver/base/CMakeFiles/rebuild_cache.dir
-/home/zbl/WebServer/webserver/base/CMakeFiles/edit_cache.dir
-/home/zbl/WebServer/webserver/base/CMakeFiles/testThread.dir

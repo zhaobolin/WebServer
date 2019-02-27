@@ -1,0 +1,2 @@
+/usr/bin/ar qc libserver_base.a  CMakeFiles/libserver_base.dir/thread.cc.o
+/usr/bin/ranlib libserver_base.a
