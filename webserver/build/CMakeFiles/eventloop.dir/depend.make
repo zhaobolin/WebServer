@@ -7,5 +7,6 @@ CMakeFiles/eventloop.dir/main.cc.o: ../base/currentthread.h
 CMakeFiles/eventloop.dir/main.cc.o: ../base/mutex.h
 CMakeFiles/eventloop.dir/main.cc.o: ../base/noncopyable.h
 CMakeFiles/eventloop.dir/main.cc.o: ../base/thread.h
+CMakeFiles/eventloop.dir/main.cc.o: ../eventloop.h
 CMakeFiles/eventloop.dir/main.cc.o: ../main.cc
 

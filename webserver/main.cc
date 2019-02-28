@@ -1,16 +1,21 @@
-#include "thread.h"
+#include "base/thread.h"
+#include "eventloop.h"
 #include <functional>
 #include <stdio.h>
 #include <string>
-void pdata()
+void threadFunc()
 {
-		printf("hello world\n");
-		printf("子线程tid的值为:%d\n线程名为:%s\n",currentthread::tid(),currentthread::name());
+		printf("threadFunc\n");
+		printf("线程tid的值为:%d\n线程名为:%s\n",currentthread::tid(),currentthread::name());
+		EventLoop loop;
+		loop.loop();
 }
 
 int main()
 {
 		printf("主线程tid的值为:%d\n线程名为:%s\n",currentthread::tid(),currentthread::name());
-		Thread* thread=new Thread(&pdata,"pdata");
+		Thread* thread=new Thread(&threadFunc,"threadFunc");
 		thread->start();
+		EventLoop loop;
+		loop.loop();
 }
