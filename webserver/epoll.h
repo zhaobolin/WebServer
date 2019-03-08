@@ -2,8 +2,7 @@
 #include "channel.h"
 #include <vector>
 #include <sys/epoll.h>
-#include <memory>
-
+#include "timer.h"
 class Epoll
 {
 		public:
@@ -28,6 +27,6 @@ class Epoll
 				int epollfd_;
 				std::vector<epoll_event> events_;//存放epoll_wait的就绪事件
 				std::shared_ptr<Channel> fd2chan_[MAXFDS];//使用fd作为下标存放Channel
-				std::shared_ptr<HttpData> fd2http_[MAXFDS];//使用fd作为下标存放httpdata
+				//std::shared_ptr<HttpData> fd2http_[MAXFDS];//使用fd作为下标存放httpdata
 				TimerManager timerManager_;
 };

@@ -136,6 +136,87 @@ libserver_base/fast:
 	$(MAKE) -f base/CMakeFiles/libserver_base.dir/build.make base/CMakeFiles/libserver_base.dir/build
 .PHONY : libserver_base/fast
 
+channel.o: channel.cc.o
+
+.PHONY : channel.o
+
+# target to build an object file
+channel.cc.o:
+	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/channel.cc.o
+.PHONY : channel.cc.o
+
+channel.i: channel.cc.i
+
+.PHONY : channel.i
+
+# target to preprocess a source file
+channel.cc.i:
+	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/channel.cc.i
+.PHONY : channel.cc.i
+
+channel.s: channel.cc.s
+
+.PHONY : channel.s
+
+# target to generate assembly for a file
+channel.cc.s:
+	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/channel.cc.s
+.PHONY : channel.cc.s
+
+epoll.o: epoll.cc.o
+
+.PHONY : epoll.o
+
+# target to build an object file
+epoll.cc.o:
+	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/epoll.cc.o
+.PHONY : epoll.cc.o
+
+epoll.i: epoll.cc.i
+
+.PHONY : epoll.i
+
+# target to preprocess a source file
+epoll.cc.i:
+	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/epoll.cc.i
+.PHONY : epoll.cc.i
+
+epoll.s: epoll.cc.s
+
+.PHONY : epoll.s
+
+# target to generate assembly for a file
+epoll.cc.s:
+	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/epoll.cc.s
+.PHONY : epoll.cc.s
+
+eventloop.o: eventloop.cc.o
+
+.PHONY : eventloop.o
+
+# target to build an object file
+eventloop.cc.o:
+	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/eventloop.cc.o
+.PHONY : eventloop.cc.o
+
+eventloop.i: eventloop.cc.i
+
+.PHONY : eventloop.i
+
+# target to preprocess a source file
+eventloop.cc.i:
+	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/eventloop.cc.i
+.PHONY : eventloop.cc.i
+
+eventloop.s: eventloop.cc.s
+
+.PHONY : eventloop.s
+
+# target to generate assembly for a file
+eventloop.cc.s:
+	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/eventloop.cc.s
+.PHONY : eventloop.cc.s
+
 main.o: main.cc.o
 
 .PHONY : main.o
@@ -163,6 +244,60 @@ main.cc.s:
 	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/main.cc.s
 .PHONY : main.cc.s
 
+timer.o: timer.cc.o
+
+.PHONY : timer.o
+
+# target to build an object file
+timer.cc.o:
+	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/timer.cc.o
+.PHONY : timer.cc.o
+
+timer.i: timer.cc.i
+
+.PHONY : timer.i
+
+# target to preprocess a source file
+timer.cc.i:
+	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/timer.cc.i
+.PHONY : timer.cc.i
+
+timer.s: timer.cc.s
+
+.PHONY : timer.s
+
+# target to generate assembly for a file
+timer.cc.s:
+	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/timer.cc.s
+.PHONY : timer.cc.s
+
+util.o: util.cc.o
+
+.PHONY : util.o
+
+# target to build an object file
+util.cc.o:
+	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/util.cc.o
+.PHONY : util.cc.o
+
+util.i: util.cc.i
+
+.PHONY : util.i
+
+# target to preprocess a source file
+util.cc.i:
+	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/util.cc.i
+.PHONY : util.cc.i
+
+util.s: util.cc.s
+
+.PHONY : util.s
+
+# target to generate assembly for a file
+util.cc.s:
+	$(MAKE) -f CMakeFiles/eventloop.dir/build.make CMakeFiles/eventloop.dir/util.cc.s
+.PHONY : util.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -173,9 +308,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... eventloop"
 	@echo "... libserver_base"
+	@echo "... channel.o"
+	@echo "... channel.i"
+	@echo "... channel.s"
+	@echo "... epoll.o"
+	@echo "... epoll.i"
+	@echo "... epoll.s"
+	@echo "... eventloop.o"
+	@echo "... eventloop.i"
+	@echo "... eventloop.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... timer.o"
+	@echo "... timer.i"
+	@echo "... timer.s"
+	@echo "... util.o"
+	@echo "... util.i"
+	@echo "... util.s"
 .PHONY : help
 
 

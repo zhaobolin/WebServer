@@ -4,7 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/zbl/WebServer/webserver/channel.cc" "/home/zbl/WebServer/webserver/build/CMakeFiles/eventloop.dir/channel.cc.o"
+  "/home/zbl/WebServer/webserver/epoll.cc" "/home/zbl/WebServer/webserver/build/CMakeFiles/eventloop.dir/epoll.cc.o"
+  "/home/zbl/WebServer/webserver/eventloop.cc" "/home/zbl/WebServer/webserver/build/CMakeFiles/eventloop.dir/eventloop.cc.o"
   "/home/zbl/WebServer/webserver/main.cc" "/home/zbl/WebServer/webserver/build/CMakeFiles/eventloop.dir/main.cc.o"
+  "/home/zbl/WebServer/webserver/timer.cc" "/home/zbl/WebServer/webserver/build/CMakeFiles/eventloop.dir/timer.cc.o"
+  "/home/zbl/WebServer/webserver/util.cc" "/home/zbl/WebServer/webserver/build/CMakeFiles/eventloop.dir/util.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

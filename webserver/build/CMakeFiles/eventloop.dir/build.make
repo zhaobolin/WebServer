@@ -57,9 +57,48 @@ include CMakeFiles/eventloop.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/eventloop.dir/flags.make
 
+CMakeFiles/eventloop.dir/channel.cc.o: CMakeFiles/eventloop.dir/flags.make
+CMakeFiles/eventloop.dir/channel.cc.o: ../channel.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zbl/WebServer/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/eventloop.dir/channel.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eventloop.dir/channel.cc.o -c /home/zbl/WebServer/webserver/channel.cc
+
+CMakeFiles/eventloop.dir/channel.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/eventloop.dir/channel.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zbl/WebServer/webserver/channel.cc > CMakeFiles/eventloop.dir/channel.cc.i
+
+CMakeFiles/eventloop.dir/channel.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/eventloop.dir/channel.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zbl/WebServer/webserver/channel.cc -o CMakeFiles/eventloop.dir/channel.cc.s
+
+CMakeFiles/eventloop.dir/epoll.cc.o: CMakeFiles/eventloop.dir/flags.make
+CMakeFiles/eventloop.dir/epoll.cc.o: ../epoll.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zbl/WebServer/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/eventloop.dir/epoll.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eventloop.dir/epoll.cc.o -c /home/zbl/WebServer/webserver/epoll.cc
+
+CMakeFiles/eventloop.dir/epoll.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/eventloop.dir/epoll.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zbl/WebServer/webserver/epoll.cc > CMakeFiles/eventloop.dir/epoll.cc.i
+
+CMakeFiles/eventloop.dir/epoll.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/eventloop.dir/epoll.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zbl/WebServer/webserver/epoll.cc -o CMakeFiles/eventloop.dir/epoll.cc.s
+
+CMakeFiles/eventloop.dir/eventloop.cc.o: CMakeFiles/eventloop.dir/flags.make
+CMakeFiles/eventloop.dir/eventloop.cc.o: ../eventloop.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zbl/WebServer/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/eventloop.dir/eventloop.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eventloop.dir/eventloop.cc.o -c /home/zbl/WebServer/webserver/eventloop.cc
+
+CMakeFiles/eventloop.dir/eventloop.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/eventloop.dir/eventloop.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zbl/WebServer/webserver/eventloop.cc > CMakeFiles/eventloop.dir/eventloop.cc.i
+
+CMakeFiles/eventloop.dir/eventloop.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/eventloop.dir/eventloop.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zbl/WebServer/webserver/eventloop.cc -o CMakeFiles/eventloop.dir/eventloop.cc.s
+
 CMakeFiles/eventloop.dir/main.cc.o: CMakeFiles/eventloop.dir/flags.make
 CMakeFiles/eventloop.dir/main.cc.o: ../main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zbl/WebServer/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/eventloop.dir/main.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zbl/WebServer/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/eventloop.dir/main.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eventloop.dir/main.cc.o -c /home/zbl/WebServer/webserver/main.cc
 
 CMakeFiles/eventloop.dir/main.cc.i: cmake_force
@@ -70,18 +109,54 @@ CMakeFiles/eventloop.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/eventloop.dir/main.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zbl/WebServer/webserver/main.cc -o CMakeFiles/eventloop.dir/main.cc.s
 
+CMakeFiles/eventloop.dir/timer.cc.o: CMakeFiles/eventloop.dir/flags.make
+CMakeFiles/eventloop.dir/timer.cc.o: ../timer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zbl/WebServer/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/eventloop.dir/timer.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eventloop.dir/timer.cc.o -c /home/zbl/WebServer/webserver/timer.cc
+
+CMakeFiles/eventloop.dir/timer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/eventloop.dir/timer.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zbl/WebServer/webserver/timer.cc > CMakeFiles/eventloop.dir/timer.cc.i
+
+CMakeFiles/eventloop.dir/timer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/eventloop.dir/timer.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zbl/WebServer/webserver/timer.cc -o CMakeFiles/eventloop.dir/timer.cc.s
+
+CMakeFiles/eventloop.dir/util.cc.o: CMakeFiles/eventloop.dir/flags.make
+CMakeFiles/eventloop.dir/util.cc.o: ../util.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zbl/WebServer/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/eventloop.dir/util.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eventloop.dir/util.cc.o -c /home/zbl/WebServer/webserver/util.cc
+
+CMakeFiles/eventloop.dir/util.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/eventloop.dir/util.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zbl/WebServer/webserver/util.cc > CMakeFiles/eventloop.dir/util.cc.i
+
+CMakeFiles/eventloop.dir/util.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/eventloop.dir/util.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zbl/WebServer/webserver/util.cc -o CMakeFiles/eventloop.dir/util.cc.s
+
 # Object files for target eventloop
 eventloop_OBJECTS = \
-"CMakeFiles/eventloop.dir/main.cc.o"
+"CMakeFiles/eventloop.dir/channel.cc.o" \
+"CMakeFiles/eventloop.dir/epoll.cc.o" \
+"CMakeFiles/eventloop.dir/eventloop.cc.o" \
+"CMakeFiles/eventloop.dir/main.cc.o" \
+"CMakeFiles/eventloop.dir/timer.cc.o" \
+"CMakeFiles/eventloop.dir/util.cc.o"
 
 # External object files for target eventloop
 eventloop_EXTERNAL_OBJECTS =
 
+../eventloop: CMakeFiles/eventloop.dir/channel.cc.o
+../eventloop: CMakeFiles/eventloop.dir/epoll.cc.o
+../eventloop: CMakeFiles/eventloop.dir/eventloop.cc.o
 ../eventloop: CMakeFiles/eventloop.dir/main.cc.o
+../eventloop: CMakeFiles/eventloop.dir/timer.cc.o
+../eventloop: CMakeFiles/eventloop.dir/util.cc.o
 ../eventloop: CMakeFiles/eventloop.dir/build.make
 ../eventloop: base/libserver_base.a
 ../eventloop: CMakeFiles/eventloop.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zbl/WebServer/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../eventloop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zbl/WebServer/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ../eventloop"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/eventloop.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
